@@ -127,6 +127,18 @@
             z-index: -1;
             opacity: 0.6;
         }
+        
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .check-icon {
+            flex-shrink: 0;
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -165,13 +177,13 @@
             </div>
         </section>
 
-        <!-- Slide 2: What is Codemingo -->
+        <!-- Slide 2: Why Codemingo -->
         <section id="slide-2" class="slide bg-white">
             <div class="blob bg-blue-100 w-96 h-96 bottom-0 right-0"></div>
             
             <div class="slide-content py-20">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-800">What is Codemingo?</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-800">Why Codemingo?</h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                         <div>
@@ -183,38 +195,49 @@
                             </p>
                         </div>
                         
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="bg-blue-50 p-6 rounded-xl">
-                                <svg class="w-10 h-10 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                                </svg>
-                                <h3 class="text-lg font-semibold mb-2">Learning</h3>
-                                <p class="text-gray-600">Tech-focused learning with practical skills</p>
+                        <div class="space-y-6">
+                            <div class="check-item">
+                                <div class="check-icon">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">No fluff, no noise — just real growth</h3>
+                                </div>
                             </div>
                             
-                            <div class="bg-blue-50 p-6 rounded-xl">
-                                <svg class="w-10 h-10 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
-                                </svg>
-                                <h3 class="text-lg font-semibold mb-2">Solo Challenges</h3>
-                                <p class="text-gray-600">Build your skills with individual projects</p>
+                            <div class="check-item">
+                                <div class="check-icon">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Build meaningful projects with others</h3>
+                                </div>
                             </div>
                             
-                            <div class="bg-blue-50 p-6 rounded-xl">
-                                <svg class="w-10 h-10 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                                <h3 class="text-lg font-semibold mb-2">Open Source</h3>
-                                <p class="text-gray-600">Contribute to open source projects</p>
+                            <div class="check-item">
+                                <div class="check-icon">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Get support, mentorship, and open-source experience</h3>
+                                </div>
                             </div>
                             
-                            <div class="bg-blue-50 p-6 rounded-xl">
-                                <svg class="w-10 h-10 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
-                                </svg>
-                                <h3 class="text-lg font-semibold mb-2">Building Together</h3>
-                                <p class="text-gray-600">Collaborate on real-world applications</p>
+                            <div class="check-item">
+                                <div class="check-icon">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-800">Launch what you create, together</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,13 +245,86 @@
             </div>
         </section>
 
-        <!-- Slide 3: Onboarding Process -->
+        <!-- Slide 3: What We Offer -->
         <section id="slide-3" class="slide bg-gray-50">
             <div class="blob bg-blue-200 w-80 h-80 top-20 left-20"></div>
             
             <div class="slide-content py-20">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">Onboarding Process</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">What We Offer</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Tech-focused learning & community</h3>
+                                <p class="text-gray-600 mt-1">A dedicated space for practical skills and real-world applications</p>
+                            </div>
+                        </div>
+                        
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Hands-on projects, not just theory</h3>
+                                <p class="text-gray-600 mt-1">Build real applications that solve actual problems</p>
+                            </div>
+                        </div>
+                        
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Open-source collaboration</h3>
+                                <p class="text-gray-600 mt-1">Contribute to open-source projects and build your portfolio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">A place to showcase your skills and ship real work</h3>
+                                <p class="text-gray-600 mt-1">Demonstrate your abilities and get recognition</p>
+                            </div>
+                        </div>
+                        
+                        <div class="check-item">
+                            <div class="check-icon">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Opportunities to grow your portfolio and network</h3>
+                                <p class="text-gray-600 mt-1">Connect with like-minded developers and expand your professional circle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Onboarding Process -->
+        <section id="slide-4" class="slide bg-white">
+            <div class="blob bg-indigo-100 w-96 h-96 bottom-0 left-0"></div>
+            
+            <div class="slide-content py-20">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">Our Onboarding Process</h2>
                     
                     <div class="space-y-8">
                         <div class="flex flex-col md:flex-row items-start gap-6">
@@ -236,8 +332,8 @@
                                 <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">1</div>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-semibold mb-2">Join Discord</h3>
-                                <p class="text-gray-600 text-lg">Connect with our community server and introduce yourself in the #welcome channel.</p>
+                                <h3 class="text-2xl font-semibold mb-2">Join the Discord server</h3>
+                                <p class="text-gray-600 text-lg">Connect with our community and introduce yourself</p>
                             </div>
                         </div>
                         
@@ -246,8 +342,8 @@
                                 <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">2</div>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-semibold mb-2">Choose Your Track</h3>
-                                <p class="text-gray-600 text-lg">Select your area of interest: Frontend, Backend, UI/UX Design, or Open Source.</p>
+                                <h3 class="text-2xl font-semibold mb-2">Visit #start-here for first steps</h3>
+                                <p class="text-gray-600 text-lg">Read the welcome guide and get oriented</p>
                             </div>
                         </div>
                         
@@ -256,8 +352,8 @@
                                 <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">3</div>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-semibold mb-2">Complete a Starter Challenge</h3>
-                                <p class="text-gray-600 text-lg">Build a small project to demonstrate your skills and commitment.</p>
+                                <h3 class="text-2xl font-semibold mb-2">Accept the rules and select your role</h3>
+                                <p class="text-gray-600 text-lg">Choose your area of interest: Frontend, Backend, UI/UX Design, or Open Source</p>
                             </div>
                         </div>
                         
@@ -266,8 +362,8 @@
                                 <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">4</div>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-semibold mb-2">Be Active and Helpful</h3>
-                                <p class="text-gray-600 text-lg">Engage with the community, ask questions, and help others when you can.</p>
+                                <h3 class="text-2xl font-semibold mb-2">Complete a simple Starter Challenge</h3>
+                                <p class="text-gray-600 text-lg">Build a small project to demonstrate your skills and commitment</p>
                             </div>
                         </div>
                         
@@ -276,8 +372,18 @@
                                 <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">5</div>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-semibold mb-2">Earn Builder Role</h3>
-                                <p class="text-gray-600 text-lg">Unlock access to collaborative projects and advanced resources.</p>
+                                <h3 class="text-2xl font-semibold mb-2">Submit it to unlock full access</h3>
+                                <p class="text-gray-600 text-lg">Share your work in the #submit-task channel</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold">6</div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-2">Start collaborating in real builds</h3>
+                                <p class="text-gray-600 text-lg">Join project teams and contribute to ongoing work</p>
                             </div>
                         </div>
                     </div>
@@ -285,22 +391,23 @@
             </div>
         </section>
 
-        <!-- Slide 4: Tracks & Roles -->
-        <section id="slide-4" class="slide bg-white">
-            <div class="blob bg-indigo-100 w-96 h-96 bottom-0 left-0"></div>
+        <!-- Slide 5: Tracks & Roles -->
+        <section id="slide-5" class="slide bg-gray-50">
+            <div class="blob bg-blue-100 w-80 h-80 top-20 right-20"></div>
             
             <div class="slide-content py-20">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">Tracks & Roles</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-blue-800">Roles You Can Choose</h2>
+                    <p class="text-xl text-gray-700 mb-12">You'll get access based on what you're learning and where you want to grow.</p>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="track-card bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="track-card bg-white p-6 rounded-xl shadow-sm">
                             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600">
                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold mb-3">Frontend Dev</h3>
+                            <h3 class="text-xl font-semibold mb-3">Frontend Developer</h3>
                             <p class="text-gray-600 mb-4">Build beautiful user interfaces and interactive experiences.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">React</span>
@@ -309,13 +416,13 @@
                             </div>
                         </div>
                         
-                        <div class="track-card bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="track-card bg-white p-6 rounded-xl shadow-sm">
                             <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold mb-3">Backend Dev</h3>
+                            <h3 class="text-xl font-semibold mb-3">Backend Developer</h3>
                             <p class="text-gray-600 mb-4">Create robust server-side applications and APIs.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Node.js</span>
@@ -324,7 +431,7 @@
                             </div>
                         </div>
                         
-                        <div class="track-card bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="track-card bg-white p-6 rounded-xl shadow-sm">
                             <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-600">
                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
@@ -339,13 +446,28 @@
                             </div>
                         </div>
                         
-                        <div class="track-card bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="track-card bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4 text-yellow-600">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Beginner Builder</h3>
+                            <p class="text-gray-600 mb-4">Just starting your tech journey? Learn the fundamentals.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">HTML</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">CSS</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">JavaScript</span>
+                            </div>
+                        </div>
+                        
+                        <div class="track-card bg-white p-6 rounded-xl shadow-sm">
                             <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 text-red-600">
                                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold mb-3">Open Source</h3>
+                            <h3 class="text-xl font-semibold mb-3">Open Source Contributor</h3>
                             <p class="text-gray-600 mb-4">Contribute to open source projects and communities.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-red-100 text-red-800 text-xs font-medium rounded-full">GitHub</span>
@@ -358,17 +480,17 @@
             </div>
         </section>
 
-        <!-- Slide 5: Project Flow -->
-        <section id="slide-5" class="slide bg-gray-50">
-            <div class="blob bg-blue-100 w-80 h-80 top-20 right-20"></div>
+        <!-- Slide 6: Project Flow -->
+        <section id="slide-6" class="slide bg-white">
+            <div class="blob bg-indigo-100 w-96 h-96 bottom-0 left-0"></div>
             
             <div class="slide-content py-20">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">Project Flow</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">Our Project Flow</h2>
                     
                     <div class="relative">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="bg-white p-8 rounded-xl shadow-md relative">
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-md relative">
                                 <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
                                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -376,6 +498,12 @@
                                 </div>
                                 <h3 class="text-2xl font-semibold mb-4">Solo</h3>
                                 <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Brainstorm ideas in #project-ideas
+                                    </li>
                                     <li class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -388,17 +516,11 @@
                                         </svg>
                                         Build your skills
                                     </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                        </svg>
-                                        Share your progress
-                                    </li>
                                 </ul>
                                 <div class="flow-arrow hidden md:block">→</div>
                             </div>
                             
-                            <div class="bg-white p-8 rounded-xl shadow-md relative">
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-md relative">
                                 <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
                                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
@@ -410,7 +532,13 @@
                                         <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                         </svg>
-                                        Join team projects
+                                        Build in public in #project-updates
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Collaborate in #build-together
                                     </li>
                                     <li class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -418,17 +546,11 @@
                                         </svg>
                                         Work with mentors
                                     </li>
-                                    <li class="flex items-start">
-                                        <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                        </svg>
-                                        Build in public
-                                    </li>
                                 </ul>
                                 <div class="flow-arrow hidden md:block">→</div>
                             </div>
                             
-                            <div class="bg-white p-8 rounded-xl shadow-md">
+                            <div class="bg-gray-50 p-8 rounded-xl shadow-md">
                                 <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
                                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -440,7 +562,7 @@
                                         <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                         </svg>
-                                        Ship real products
+                                        Ship in #ship-it channel
                                     </li>
                                     <li class="flex items-start">
                                         <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -458,12 +580,12 @@
                             </div>
                         </div>
                         
-                        <div class="mt-12 bg-white p-6 rounded-xl shadow-md">
+                        <div class="mt-12 bg-gray-50 p-6 rounded-xl shadow-md">
                             <div class="flex items-center mb-4">
                                 <svg class="w-6 h-6 text-blue-600 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
                                 </svg>
-                                <h3 class="text-lg font-semibold text-gray-800">Project Channels</h3>
+                                <h3 class="text-lg font-semibold text-gray-800">Stay in sync with GitHub</h3>
                             </div>
                             <p class="text-gray-600">
                                 All project updates, pull requests, and issues are automatically shared in the <span class="text-blue-600 font-medium">#github-feeds</span> channel, keeping everyone informed about project progress.
@@ -474,8 +596,104 @@
             </div>
         </section>
 
-        <!-- Slide 6: Get Started -->
-        <section id="slide-6" class="slide bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <!-- Slide 7: How to Join the Build Crew -->
+        <section id="slide-7" class="slide bg-gray-50">
+            <div class="blob bg-blue-200 w-80 h-80 top-20 left-20"></div>
+            
+            <div class="slide-content py-20">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">How to Join the Build Crew</h2>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mr-6 text-blue-600">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Unlock Project Access</h3>
+                            </div>
+                        </div>
+                        
+                        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                            To access project channels, complete your first starter challenge.
+                            Post your work in <span class="text-blue-600 font-medium">#submit-task</span>, and once approved, you'll get the Builder Role.
+                        </p>
+                        
+                        <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-blue-700">
+                                        The Builder Role gives you access to all project channels, collaboration opportunities, and advanced resources.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: What's Next -->
+        <section id="slide-8" class="slide bg-white">
+            <div class="blob bg-indigo-100 w-96 h-96 bottom-0 right-0"></div>
+            
+            <div class="slide-content py-20">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-blue-800">What's Next?</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-4">Join our Launch Event</h3>
+                            <p class="text-gray-600 mb-6">
+                                Be part of our official launch and meet other members of the community. Network with like-minded developers and designers.
+                            </p>
+                            <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                Register Now
+                            </a>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-blue-600">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold mb-4">Become a Founding Member</h3>
+                            <p class="text-gray-600 mb-6">
+                                Help shape the early Codemingo experience and get special recognition as one of our founding members.
+                            </p>
+                            <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 text-center">
+                        <p class="text-xl text-gray-700 mb-6">
+                            Be part of something that grows with you. Codemingo is built by the community, for the community.
+                        </p>
+                        <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+                            Join the Community
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: Get Started -->
+        <section id="slide-9" class="slide bg-gradient-to-br from-blue-600 to-blue-800 text-white">
             <div class="blob bg-blue-400 w-96 h-96 top-0 right-0 opacity-20"></div>
             <div class="blob bg-indigo-500 w-80 h-80 bottom-0 left-0 opacity-20"></div>
             
@@ -503,37 +721,36 @@
                         <a href="#" class="flex items-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all">
                             <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
-                                    <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
-                                </svg>
-                            </div>
-                            <div class="text-left">
-                                <h4 class="font-semibold text-xl mb-1">GitHub Organization</h4>
-                                <p class="text-blue-100">Access our code repositories</p>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="flex items-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                                </svg>
-                            </div>
-                            <div class="text-left">
-                                <h4 class="font-semibold text-xl mb-1">Starter Challenges</h4>
-                                <p class="text-blue-100">Begin with beginner-friendly tasks</p>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="flex items-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path>
                                 </svg>
                             </div>
                             <div class="text-left">
-                                <h4 class="font-semibold text-xl mb-1">Resource Channel</h4>
-                                <p class="text-blue-100">Access learning materials</p>
+                                <h4 class="font-semibold text-xl mb-1">Read Docs</h4>
+                                <p class="text-blue-100">Access resources & guides</p>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="flex items-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-semibold text-xl mb-1">Sign Up as Tester</h4>
+                                <p class="text-blue-100">Try new features first</p>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="flex items-center p-6 bg-white bg-opacity-10 rounded-xl hover:bg-opacity-20 transition-all">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="text-left">
+                                <h4 class="font-semibold text-xl mb-1">DM Us</h4>
+                                <p class="text-blue-100">Ask questions & get help</p>
                             </div>
                         </a>
                     </div>
@@ -559,6 +776,9 @@
         <div class="progress-dot" data-slide="4"></div>
         <div class="progress-dot" data-slide="5"></div>
         <div class="progress-dot" data-slide="6"></div>
+        <div class="progress-dot" data-slide="7"></div>
+        <div class="progress-dot" data-slide="8"></div>
+        <div class="progress-dot" data-slide="9"></div>
     </div>
 
     <!-- Navigation Arrows -->
@@ -708,5 +928,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96725a5201f393e1',t:'MTc1Mzg1MjI2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9672697976f234ed',t:'MTc1Mzg1Mjg4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
